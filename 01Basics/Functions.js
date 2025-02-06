@@ -43,3 +43,23 @@ let obj2 =
 };
 
 obj2.demofxn();
+
+
+// avoid this type of conversions - they create confusion
+console.log(null>0); // gives false because null is converted to number(0) and 0!>0
+console.log(null==0); // null is not converted. Null != 0
+console.log(null<=0); // gives true bcz 0==0\
+
+console.log(undefined == 0);
+console.log(undefined < 0);
+console.log(undefined >= 0);
+
+// string equality ===
+
+// treating functions as variables
+
+const msg = function(){              // function as a variable
+    console.log("Hello world");
+}
+
+msg();
