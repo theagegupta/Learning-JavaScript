@@ -8,11 +8,12 @@
 let name = "string"; // string data type
 let age = 19; // numeric data type
 let isLogginIn = false; // boolean
+let variable;
 // null => standalone value
 // symbol => unique (used to find uniqueness)
 
 // object 
-
+console.log(typeof variable)
 console.log(typeof null); // object 
 
 
